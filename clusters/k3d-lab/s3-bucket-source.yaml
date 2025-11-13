@@ -1,0 +1,12 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: Bucket
+metadata:
+  name: flux-s3-source
+  namespace: flux-system
+spec:
+  interval: 1m0s
+  provider: aws
+  bucketName: platform-gitops-bucket
+  region: us-east-1
+  secretRef:
+    name: s3-creds
