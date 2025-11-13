@@ -3,3 +3,5 @@ kind: Kustomization
 resources:
 - gotk-components.yaml
 - gotk-sync.yaml
+- s3-bucket-source.yaml
+- s3-kustomization.yaml
